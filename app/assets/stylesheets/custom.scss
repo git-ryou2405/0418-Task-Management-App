@@ -57,15 +57,53 @@ p {
   margin-right: 10px;
   font-size: 1.7em;
   color: #fff;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
+  font-style: oblique;
 }
 
 #logo:hover {
-  color: #fff;
+  color: rgb(198, 194, 186);
   text-decoration: none;
+}
+
+#header {
+    background-color: teal;
+}
+
+li .header-list {
+  color: #fff !important;
+  font-weight: bold;
+}
+
+li .header-list:hover {
+  color: rgb(198, 194, 186) !important;
+}
+
+#dropdown-title {
+  background-color: teal;
+}
+
+li .dropdown-header {
+  background-color: rgba(200,200,200,0.5);
+  font-weight: bold;
+}
+
+/* トップページ */
+
+#top-main {
+  background-color: rgba(255,255,255,0);
+}
+
+#top-main-title {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.btn-form {
+  margin-top: 10px;
 }
 
 /* デバッグウインドウ */

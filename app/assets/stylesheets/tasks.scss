@@ -1,0 +1,31 @@
+/* タスク一覧 */
+
+#table-tasks th {
+  vertical-align: middle;
+}
+
+#table-tasks td {
+    vertical-align: middle;
+}
+
+#task-name {
+  vertical-align: middle;
+  font-size: 1.8rem;
+}
+
+/* タスク新規作成 */
+
+.label-taskpage {
+  margin-top: 5px;
+}
+
+.btn-taskpage {
+  margin-top: 10px;
+}
+
+/* タスク詳細 */
+
+#table-task {
+  table-layout: fixed;
+  width: 100%;
+}

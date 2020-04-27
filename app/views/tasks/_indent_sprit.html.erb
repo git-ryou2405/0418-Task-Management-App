@@ -1,0 +1,7 @@
+<% if @task.detailed.include?("\r\n") %>
+  <% @task.detailed.split(/\R/).each do |s| %>
+    <%= text_url_to_link(s).html_safe %><br>
+  <% end %>
+<% else %>
+  <%= text_url_to_link(@task.detailed).html_safe %>
+<% end %>

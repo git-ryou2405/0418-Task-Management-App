@@ -1,0 +1,42 @@
+/* プロフィール */
+
+#table-user {
+  table-layout: fixed;
+  width: 100%;
+  
+  th {
+    vertical-align: middle;
+    text-align: center;
+  }
+  td {
+    vertical-align: middle;
+  }
+}
+
+.col-md-3 {
+  width: 25%;
+}
+
+/* プロフィール */
+
+.label-edit {
+  margin-top: 5px;
+}
+
+.btn-edit {
+  margin-top: 10px;
+}
+
+/* 利用者一覧 */
+
+#table-users {
+  table-layout: fixed;
+  width: 100%;
+  
+  th {
+    vertical-align: middle;
+  }
+  td {
+    vertical-align: middle;
+  }
+}

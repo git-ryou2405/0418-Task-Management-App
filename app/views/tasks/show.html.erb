@@ -1,0 +1,38 @@
+<% provide(:title, @user_id.name) %>
+
+<h1>タスク詳細</h1>
+
+<div class="container" >
+  <div class="row" >
+    <div class="col-md-10 col-md-offset-1">
+      <table class="table table-bordered" id="table-task">
+        <body>
+          <tr>
+            <th class="active col-md-2"><%= Task.human_attribute_name :id %></th>
+            <td class="col-md-10"><%= @task.id %></td>
+          </tr>
+          <tr>
+            <th class="active"><%= Task.human_attribute_name :taskname %></th>
+            <td><%= @task.taskname %></td>
+          </tr>
+          <tr>
+            <th class="active"><%= Task.human_attribute_name :detailed %></th>
+            <td><%= render 'tasks/indent_sprit' %></td>
+          </tr>
+          <tr>
+            <th class="active"><%= Task.human_attribute_name :created_at %></th>
+            <td><%= l @task.created_at, format: :long %></td>
+          </tr>
+          <tr>
+            <th class="active"><%= Task.human_attribute_name :updated_at %></th>
+            <td><%= l @task.updated_at, format: :long %></td>
+          </tr>
+        </body>
+      </table>
+      <%= link_to "編集", edit_user_task_path(@user_id, @task), class: "btn btn-lg btn-success" %>
+      <%= link_to "削除", user_task_path(@user_id, @task), method: :delete,
+      data: { confirm: "「#{@task.taskname}」を削除します。よろしいですか？" },
+      class: "btn btn-lg btn-danger" %>
+    </div>
+  </div>
+</div>

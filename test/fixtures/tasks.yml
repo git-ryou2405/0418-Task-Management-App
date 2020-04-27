@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  taskname: MyString
+  detailed: MyString
+  created_at: 2020-04-21 01:14:51
+  update_at: 2020-04-21 01:14:51
+  user: one
+
+two:
+  taskname: MyString
+  detailed: MyString
+  created_at: 2020-04-21 01:14:51
+  update_at: 2020-04-21 01:14:51
+  user: two

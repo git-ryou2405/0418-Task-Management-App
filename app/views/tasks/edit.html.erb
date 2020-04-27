@@ -1,0 +1,20 @@
+<% provide(:title, "Edit Task") %>
+
+<h1>タスク編集</h1>
+
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <%= form_with(model: @task, url: user_task_path(@user_id, @task), local: true, method: :patch) do |f| %>
+      <%= render 'shared/error_messages' %>
+    
+      <%= f.label :taskname, "名称", class: "label-taskpage" %>
+      <%= f.text_field :taskname, class: "form-control" %>
+    
+      <%= f.label :detailed, "詳細", class: "label-taskpage" %>
+      <%= f.text_area :detailed, rows: 5, class: "form-control" %>
+      
+      <%= f.submit '更新', class: "btn btn-lg btn-primary btn-taskpage" %>
+      <%= link_to "キャンセル", user_tasks_path(@user_id), class: "btn btn-lg btn-default btn-taskpage" %>
+    <% end %>
+  </div>
+</div>
