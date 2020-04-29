@@ -1,16 +1,16 @@
 /* タスク一覧 */
 
+#task-name {
+  vertical-align: middle;
+  font-size: 1.8rem;
+}
+
 #table-tasks th {
   vertical-align: middle;
 }
 
 #table-tasks td {
     vertical-align: middle;
-}
-
-#task-name {
-  vertical-align: middle;
-  font-size: 1.8rem;
 }
 
 /* タスク新規作成 */
