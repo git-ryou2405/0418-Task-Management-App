@@ -3,10 +3,10 @@ class TasksController < ApplicationController
   before_action :set_task_id, only: [:edit, :update, :show, :destroy]
   
   before_action :logged_in_user
-  before_action :correct_task_user_id
+  before_action :correct_task_user_check
   
   def index
-    @tasks = @user_id.tasks
+    @tasks = @user_id.tasks.all.order(created_at: "DESC")
   end
   
   def new

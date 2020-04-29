@@ -10,6 +10,10 @@ class UsersController < ApplicationController
   end
   
   def new
+    if logged_in?
+      flash[:success] = "すでにログインしています。"
+      redirect_to user_url current_user
+    end
     @user = User.new
   end
   

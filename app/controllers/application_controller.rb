@@ -23,8 +23,11 @@ class ApplicationController < ActionController::Base
   end
   
   # 現在ログイン済みのユーザーか判定
-  def correct_task_user_id
-    redirect_to(root_url) unless current_user == set_task_user_id
+  def correct_task_user_check
+    unless current_user == set_task_user_id
+      flash[:danger] = "権限がありません。"
+      redirect_to(root_url)
+    end
   end
   
   # ログイン済みか確認
