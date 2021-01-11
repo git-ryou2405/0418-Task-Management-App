@@ -42,3 +42,5 @@ $ rails server
 
 * **email** : sample@email.com
 * **password** : password
+
+削除予定コメント
