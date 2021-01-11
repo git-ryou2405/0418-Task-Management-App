@@ -44,3 +44,4 @@ $ rails server
 * **password** : password
 
 削除予定コメント
+もう一個追加する削除予定コメント
