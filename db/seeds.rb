@@ -33,3 +33,5 @@ us[0..2].each do |us|
     end
     puts "#{us.name}の登録完了"
 end
+
+puts "testコメント（削除予定）"
